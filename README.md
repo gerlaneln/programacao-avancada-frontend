@@ -1,6 +1,6 @@
 # programacao-avancada-frontend
 
-# Desafio CSS Puro
+# Somente CSS
 
 Fazer a prototipação no Figma (https://www.figma.com/) e, em seguida, colocar em HTML e
 CSS puro, conforme descrição:
