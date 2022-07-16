@@ -42,3 +42,7 @@ do Figma. Considere, ainda, a necessidade de entregar uma aplicação responsiva
 que se adapte bem aos diferentes dispositivos que o acessam.
 
 Protótipo **Figma** disponível [aqui.](https://www.figma.com/file/GxpC34ymvnwhU1EtSj96F7/Favs?node-id=0%3A1)
+
+#Bootstrap
+
+Código do vídeo [Learn Bootstrap in less than 20 minutes - Responsive Website Tutorial](https://youtu.be/eow125xV5-c)
