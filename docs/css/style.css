@@ -52,3 +52,55 @@ header, .navbar{
 .navbar-expand-lg .navbar-nav .nav-link{
     padding: 1rem 0.8rem;
 }
+
+/* Carrosel */
+
+.container-fluid{
+    --bs-gutter-x: 0;
+}
+
+/* Sobre */
+
+#about-area{
+    background-color: #f9f9f9;
+}
+
+.main-title{
+    color: #444;
+    font-size: 40px;
+    margin: 0 0 65px 0;
+    text-align: center;
+}
+
+.line-title{
+    /* display: flex; */
+    border-top: 2px solid #444;
+    width: 100%;
+    /* left: 45%; */
+    /* margin-top: -40px; */
+}
+
+#about-list{
+    list-style: none;
+    line-height: 30px;
+}
+
+/* Serviços */
+
+.service-box{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-box i{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.service-box:hover > i, .service-box:hover > h3{
+    color: #008000;
+}
+
+.service-box i, .service-box h3{
+    transition: .5s;
+}
