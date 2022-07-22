@@ -17,6 +17,10 @@ p, li{
     font-size: 14px;
 }
 
+.container-fluid{
+    --bs-gutter-x: 0;
+}
+
 /* Barra de Navegação */
 
 header, .navbar{
@@ -55,8 +59,14 @@ header, .navbar{
 
 /* Carrosel */
 
-.container-fluid{
-    --bs-gutter-x: 0;
+#mainSlides p{
+    color: #cecece;
+    font-size: 14pt;
+}
+
+.slider-btn{
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 /* Sobre */
@@ -73,11 +83,11 @@ header, .navbar{
 }
 
 .line-title{
-    /* display: flex; */
-    border-top: 2px solid #444;
-    width: 100%;
-    /* left: 45%; */
-    /* margin-top: -40px; */
+    border-bottom: 2px solid #333;
+    width: 10%;
+    left: 45%;
+    position: absolute;
+    margin-top: -40px;
 }
 
 #about-list{
@@ -103,4 +113,57 @@ header, .navbar{
 
 .service-box i, .service-box h3{
     transition: .5s;
+}
+
+/* Dados */
+
+.circle-box div {
+    padding: 0 40px;
+}
+
+.progressbar-text {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#data-area p {
+    color: #FFF;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+/* Time */
+
+.card-body{
+    text-align: center;
+    font-size: larger;
+}
+
+/* Recrutamento */
+
+#apply-area .apply-box{
+    padding: 70px;
+    text-align: center;
+}
+
+#company-img{
+    background-image: url('../img/empresa.jpg');
+    background-size: cover;
+}
+
+.apply-box h4{
+    color: #cecece;
+}
+
+.apply-box p{
+    margin: 20px 0;
+    color: #fff;
+}
+
+/* Portifólio */
+
+#proj-btn{
+    text-align: center;
+    margin-bottom: 40px;
 }

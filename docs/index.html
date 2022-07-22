@@ -16,6 +16,13 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 
+    <!-- Progressbar: biblioteca para barra de progresso -->
+    <script src="js/progressbar.min.js"></script>
+
+    <!-- Parallax: biblioteca para o efeito parallax com imagens no background -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    
     <!-- Documento de estilo da página -->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -34,7 +41,7 @@
 
     <header>
         <div class="container" id="nav-container">
-            <nav class="navbar navbar-expand-lg fixed-top">
+            <nav class="navbar navbar-expand-lg fixed-top-lg">
                 <a href="#" class="navbar-brand">
                     <img src="img/mvp_logo.svg" id="logo" alt="MVP Studio">MVP Studio
                 </a>
@@ -72,7 +79,7 @@
                     <div class="carousel-caption d-none d-md-block">
                         <h2>Quer criar um site de vendas?</h2>
                         <p>Conte com a gente! Temos mais de 20 projetos no portfólio.</p>
-                        <a href="#" class="main-btn">Ver portfólio</a>
+                        <button class="btn btn-outline-primary slider-btn">Saiba mais</button>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -80,7 +87,7 @@
                     <div class="carousel-caption d-none d-md-block">
                         <h2>Quer criar um site de vendas?</h2>
                         <p>Conte com a gente! Temos mais de 20 projetos no portfólio.</p>
-                        <a href="#" class="main-btn">Ver portfólio</a>
+                        <button class="btn btn-outline-primary slider-btn">Saiba mais</button>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -88,7 +95,7 @@
                     <div class="carousel-caption d-none d-md-block">
                         <h2>Quer criar um site de vendas?</h2>
                         <p>Conte com a gente! Temos mais de 20 projetos no portfólio.</p>
-                        <a href="#" class="main-btn">Ver portfólio</a>
+                        <button class="btn btn-outline-primary slider-btn">Saiba mais</button>
                     </div>
                 </div>
             </div>
@@ -109,10 +116,6 @@
                 <div class="row">
                     <div class="col-12">
                         <h3 class="main-title">Sobre o MVP Studio</h3>
-                    </div>
-                </div>
-                <div class="row justify-content-center align-items-center">
-                    <div>
                         <div class="line-title"></div>
                     </div>
                 </div>
@@ -181,6 +184,137 @@
         </div>
         <!-- Fechamento Serviços -->
 
+        <!-- Dados -->
+        <div id="data-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-xs-6 circle-box">
+                        <div id="circleA"></div>
+                        <p>Projetos entregues</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 circle-box">
+                        <div id="circleB"></div>
+                        <p>Clientes Felizes</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 circle-box">
+                        <div id="circleC"></div>
+                        <p>Colaboradores</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 circle-box">
+                        <div id="circleD"></div>
+                        <p>Cafézinhos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fechamento Dados -->
+
+        <!-- Time -->
+        <div id="team-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="main-title">
+                            Nosso Time
+                        </h3>
+                        <div class="line-title"></div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="img/profile1.jpg" class="card-img-top" alt="Jane Doe">
+                            <div class="card-body">
+                                <h5 class="card-title">Jane Doe</h5>
+                                <p class="card-text">Executiva de Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="img/profile2.jpg" class="card-img-top" alt="João Maria">
+                            <div class="card-body">
+                                <h5 class="card-title">João Maria</h5>
+                                <p class="card-text">UX/UI Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="img/profile3.jpg" class="card-img-top" alt="Honney Dew">
+                            <div class="card-body">
+                                <h5 class="card-title">Honney Dew</h5>
+                                <p class="card-text">Programadora Back End</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="img/profile4.jpg" class="card-img-top" alt="Prisma Rain">
+                            <div class="card-body">
+                                <h5 class="card-title">Prisma Rain</h5>
+                                <p class="card-text">Programadora Front End</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fechamento Time -->
+
+        <!-- Recrutamento -->
+        <div id="apply-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 apply-box" id="company-img"></div>
+                    <div class="col-md-6 apply-box">
+                        <h4>Se junte a nós!</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro molestiae provident debitis dicta ab, distinctio, incidunt expedita deleniti voluptatibus eveniet blanditiis id est.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro molestiae provident debitis dicta ab, distinctio, incidunt expedita deleniti voluptatibus eveniet blanditiis id est.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary" id="apply-btn">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fechamento Recrutamento -->
+
+        <!-- Portifólio -->
+        <div id="portifolio-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="main-title">Conheça o nosso portifólio</h3>
+                        <div class="line-title"></div>
+                    </div>
+                    <div class="col-12" id="proj-btn">
+                        <button class="btn btn-outline-primary filter-btn active">Categoria 1</button>
+                        <button class="btn btn-outline-primary filter-btn" id="cat1">Categoria 2</button>
+                        <button class="btn btn-outline-primary filter-btn" id="cat2">Categoria 3</button>
+                        <button class="btn btn-outline-primary filter-btn" id="cat4">Categoria 4</button>
+                    </div>
+                    <div class="col-md-4 project-box">
+                        <img src="img/proj1.jpg" alt="Projeto1" class="img-fluid">
+                    </div>
+                    <div class="col-md-4 project-box">
+                        <img src="img/proj2.jpg" alt="Projeto2" class="img-fluid">
+                    </div>
+                    <div class="col-md-4 project-box">
+                        <img src="img/proj3.jpg" alt="Projeto3" class="img-fluid">
+                    </div>
+                    <div class="col-md-4 project-box">
+                        <img src="img/proj4.jpg" alt="Projeto4" class="img-fluid">
+                    </div>
+                    <div class="col-md-4 project-box">
+                        <img src="img/proj5.jpg" alt="Projeto5" class="img-fluid">
+                    </div>
+                    <div class="col-md-4 project-box">
+                        <img src="img/proj6.jpg" alt="Projeto6" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fechamento Portifólio -->
+
+
     </div>
 
     <footer>
@@ -189,9 +323,6 @@
 
     <!-- Documento de scripts em Java Script -->
     <script src="js/scripts.js"></script>
-
-    <!-- Progress Bar -->
-    <script src="js/progressbar.min.js"></script>
 
 </body>
 
