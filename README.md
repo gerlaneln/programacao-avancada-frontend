@@ -46,3 +46,16 @@ Protótipo **Figma** disponível [aqui.](https://www.figma.com/file/GxpC34ymvnwh
 # Bootstrap
 
 Código do vídeo [Learn Bootstrap in less than 20 minutes - Responsive Website Tutorial](https://youtu.be/eow125xV5-c)
+
+# Docs - Desafio final de front-end
+
+Tarefas:
+- Terminar a página, baseado no modelo;
+- Aplicar Sass ou Less;
+- Corrigir o header: logo, posições e menu para dispositivos móveis;
+- Verificar responsividade;
+- Implementar sua própria identidade visual: mudar cores, logo, imagens e texto à vontade;
+- Subir a página via GitHub Pages: https://pages.github.com/;
+- Subir o repositório até o dia 27 de julho para a página students-codes de programacao-avancada-frontend, criando pasta com o seu primeiro nome sem caracteres especiais e lowercase nome como raiz do seu repositório, dentro de students-codes.
+
+[GitHub Pages](https://gerlaneln.github.io/programacao-avancada-frontend/)
