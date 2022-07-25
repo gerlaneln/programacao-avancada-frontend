@@ -1,4 +1,4 @@
-/* Gerais */
+/* Gerais  #6666CC */
 
 body{
     font-family: 'Lato', sans-serif;
@@ -24,7 +24,7 @@ p, li{
 /* Barra de Navegação */
 
 header, .navbar{
-    background-color: #3d3b3b;
+    background-color: #ececf9;
 }
 
 #nav-container{
@@ -33,12 +33,12 @@ header, .navbar{
 }
 
 #logo{
-    width: 75px;
+    width: 50px;
 }
 
-.nav-brand{
+.navbar-brand{
     padding: 0;
-    color: #fff;
+    color: #131339;
 }
 
 .nav-brand:hover{
@@ -46,7 +46,7 @@ header, .navbar{
 }
 
 .nav-link{
-    color: #fff;
+    color: #131339;
 }
 
 .nav-link:hover{
