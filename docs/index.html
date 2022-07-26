@@ -22,7 +22,7 @@
     <!-- Parallax: biblioteca para o efeito parallax com imagens no background -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-    
+
     <link rel="stylesheet" href="css/style.css">
     <!-- Documento de estilo da página -->
     <!-- <link rel="stylesheet" type="text/scss" href="styles.scss" /> -->
@@ -45,22 +45,21 @@
 
     <header>
         <div class="container" id="nav-container">
-            <nav class="navbar navbar-expand-lg fixed-top-lg">
+            <nav class="navbar fixed-top navbar-expand-lg">
                 <a href="#" class="navbar-brand">
                     <img src="img/flash-logo-color.svg" id="logo" alt="Flash Studio">Flash Studio
                 </a>
-                <button class="nav-toggler" type="button" data-toggler="collapse" data-target="#navbar-links"
-                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse">
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarToggler">
                     <ul class="navbar-nav">
                         <a href="#" class="nav-item nav-link" id="home-menu">Home</a>
-                        <a href="#" class="nav-item nav-link" id="about-menu">Sobre</a>
-                        <a href="#" class="nav-item nav-link" id="services-menu">Serviços</a>
-                        <a href="#" class="nav-item nav-link" id="team-menu">Time</a>
-                        <a href="#" class="nav-item nav-link" id="projects-menu">Projetos</a>
-                        <a href="#" class="nav-item nav-link" id="contact-menu">Contato</a>
+                        <a href="#about-area" class="nav-item nav-link" id="about-menu">Sobre</a>
+                        <a href="#service-area" class="nav-item nav-link" id="services-menu">Serviços</a>
+                        <a href="#team-area" class="nav-item nav-link" id="team-menu">Time</a>
+                        <a href="#portfolio-area" class="nav-item nav-link" id="projects-menu">Projetos</a>
+                        <a href="#contact-area" class="nav-item nav-link" id="contact-menu">Contato</a>
                     </ul>
                 </div>
             </nav>
@@ -129,9 +128,14 @@
                     </div>
                     <div class="col-md-6">
                         <h3 class="about-title">Uma agência que pensa no futuro</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro molestiae provident debitis dicta ab, distinctio, incidunt expedita deleniti voluptatibus eveniet blanditiis id est.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consectetur quibusdam quisquam itaque enim, consequatur libero nam facilis rerum pariatur magni aliquam repellendus eaque voluptatum cupiditate? Quibusdam cum quisquam accusantium.</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, illum unde! Voluptatem consequatur, magni libero maxime repellat dicta veniam iure repudiandae sit ducimus facere natus tenetur quod numquam, obcaecati beatae.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro molestiae provident debitis
+                            dicta ab, distinctio, incidunt expedita deleniti voluptatibus eveniet blanditiis id est.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consectetur quibusdam
+                            quisquam itaque enim, consequatur libero nam facilis rerum pariatur magni aliquam
+                            repellendus eaque voluptatum cupiditate? Quibusdam cum quisquam accusantium.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, illum unde! Voluptatem
+                            consequatur, magni libero maxime repellat dicta veniam iure repudiandae sit ducimus facere
+                            natus tenetur quod numquam, obcaecati beatae.</p>
                         <ul id="about-list">
                             <li><i class="bi bi-patch-check"></i> Layout responsivo</li>
                             <li><i class="bi bi-patch-check"></i> Aplicações integradas</li>
@@ -175,7 +179,7 @@
                     </div>
                     <div class="col-md-4 service-box">
                         <i class="bi bi-server"></i>
-                        <h3>Servidores para Hospedagem</h3>
+                        <h3>Hospedagem</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis elementum ipsum.</p>
                     </div>
                     <div class="col-md-4 service-box">
@@ -271,8 +275,10 @@
                     <div class="col-md-6 apply-box" id="company-img"></div>
                     <div class="col-md-6 apply-box">
                         <h4>Se junte a nós!</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro molestiae provident debitis dicta ab, distinctio, incidunt expedita deleniti voluptatibus eveniet blanditiis id est.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro molestiae provident debitis dicta ab, distinctio, incidunt expedita deleniti voluptatibus eveniet blanditiis id est.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro molestiae provident debitis
+                            dicta ab, distinctio, incidunt expedita deleniti voluptatibus eveniet blanditiis id est.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro molestiae provident debitis
+                            dicta ab, distinctio, incidunt expedita deleniti voluptatibus eveniet blanditiis id est.</p>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                         <a href="#" class="btn btn-primary" id="apply-btn">Saiba mais</a>
                     </div>
@@ -282,47 +288,116 @@
         <!-- Fechamento Recrutamento -->
 
         <!-- Portifólio -->
-        <div id="portifolio-area">
+        <div id="portfolio-area">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <h3 class="main-title">Conheça o nosso portifólio</h3>
+                    <div class="col-md-12">
+                        <h3 class="main-title">Conheça nossos projetos</h3>
                         <div class="line-title"></div>
                     </div>
-                    <div class="col-12" id="proj-btn">
-                        <button class="btn btn-outline-primary filter-btn active">Categoria 1</button>
-                        <button class="btn btn-outline-primary filter-btn" id="cat1">Categoria 2</button>
-                        <button class="btn btn-outline-primary filter-btn" id="cat2">Categoria 3</button>
-                        <button class="btn btn-outline-primary filter-btn" id="cat4">Categoria 4</button>
+                    <div class="col-md-12" id="filter-btn-box">
+                        <button class="btn btn-outline-primary filter-btn active" id="all-btn">Todos</button>
+                        <button class="btn btn-outline-primary filter-btn" id="be-btn">Back End</button>
+                        <button class="btn btn-outline-primary filter-btn" id="fe-btn">Front End</button>
+                        <button class="btn btn-outline-primary filter-btn" id="fs-btn">Full Stack</button>
                     </div>
-                    <div class="col-md-4 project-box">
-                        <img src="img/proj1.jpg" alt="Projeto1" class="img-fluid">
+                    <div class="col-md-4 project-box be">
+                        <img src="img/proj1.jpg" class="img-fluid" alt="Projeto 1">
                     </div>
-                    <div class="col-md-4 project-box">
-                        <img src="img/proj2.jpg" alt="Projeto2" class="img-fluid">
+                    <div class="col-md-4 project-box fe">
+                        <img src="img/proj2.jpg" class="img-fluid" alt="Projeto 2">
                     </div>
-                    <div class="col-md-4 project-box">
-                        <img src="img/proj3.jpg" alt="Projeto3" class="img-fluid">
+                    <div class="col-md-4 project-box fs">
+                        <img src="img/proj3.jpg" class="img-fluid" alt="Projeto 3">
                     </div>
-                    <div class="col-md-4 project-box">
-                        <img src="img/proj4.jpg" alt="Projeto4" class="img-fluid">
+                    <div class="col-md-4 project-box be">
+                        <img src="img/proj4.jpg" class="img-fluid" alt="Projeto 4">
                     </div>
-                    <div class="col-md-4 project-box">
-                        <img src="img/proj5.jpg" alt="Projeto5" class="img-fluid">
+                    <div class="col-md-4 project-box fe">
+                        <img src="img/proj5.jpg" class="img-fluid" alt="Projeto 5">
                     </div>
-                    <div class="col-md-4 project-box">
-                        <img src="img/proj6.jpg" alt="Projeto6" class="img-fluid">
+                    <div class="col-md-4 project-box fs">
+                        <img src="img/proj6.jpg" class="img-fluid" alt="Projeto 6">
                     </div>
                 </div>
             </div>
         </div>
         <!-- Fechamento Portifólio -->
 
+        <!-- Newsletter -->
+        <div id="news-area">
+            <div class="container">
+                <div class="col-md-12">
+                    <h3 class="main-title">Conheça todos os nossos projetos primeiro!</h3>
+                    <div class="line-title"></div>
+                </div>
+                <p>Se inscreva no nosso newsletter para ficar por dentro dos nossos projetos e novidades.</p>
+                <form action="">
+                    <input type="text" class="form-control" id="email-input" name="email" placeholder="email@email.com">
+                    <input type="submit" id="news-btn" value="Inscrever">
+                </form>
+            </div>
+        </div>
+        <!-- Fechamento Newsletter -->
 
+        <!-- Call to Action -->
+        <!-- <div id="call-area">
+            <div class="container">
+                <div class="row">
+                    <p>Deseja fazer um orçamento sem compromisso?</p>
+                    <button class="main-btn" id="call-btn">Orçar</button>
+                </div>
+            </div>
+        </div> -->
+        <!-- Fechamento Call to Action -->
     </div>
 
+    <!-- Rodapé -->
     <footer>
-
+        <div id="contact-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Entre em contato com a gente!</h3>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="bi bi-phone"></i>
+                        <p><span class="contact-tile">Telefone:</span> (68)12345-9876</p>
+                        <p><span class="contact-tile">Atendimento:</span> 8:00 - 17:00</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="bi bi-at"></i>
+                        <p><span class="contact-tile">E-mail:</span> email@germail.com.br</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="bi bi-pin-map"></i></i>
+                        <p><span class="contact-tile">Endereço:</span> Rua Sem Saída S/N</p>
+                    </div>
+                    <div class="col-md-6" id="msg-box">
+                        <p>Ou nos mande uma mensagem:</p>
+                    </div>
+                    <div class="col-md-6" id="contact-form">
+                        <form action="">
+                            <input type="text" class="form-control" placeholder="E-mail" name="email">
+                            <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                            <textarea class="form-control" rows="3" placeholder="Sua mensagem..."
+                                name="message"></textarea>
+                            <input type="submit" class="btn btn-outline-primary">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copy-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><a href="https://www.github.com/gerlaneln" target="_blank">Gerlâne Lima</a>. Todos os direitos reservados
+                            &copy; 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- Documento de scripts em Java Script -->

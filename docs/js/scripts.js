@@ -5,11 +5,11 @@ $(document).ready(function () {
 
     let circleA = new ProgressBar.Circle(containerA, {
 
-        color: '#FFA500',
+        color: '#6666CC',
         strokeWidth: 8,
         duration: 1400,
         from: { color: '#aaa' },
-        to: { color: '#FFA500' },
+        to: { color: '#6666CC' },
 
         step: function (state, circle) {
             circle.path.setAttribute('stroke', state.color);
@@ -25,11 +25,11 @@ $(document).ready(function () {
 
     let circleB = new ProgressBar.Circle(containerB, {
 
-        color: '#FFA500',
+        color: '#6666CC',
         strokeWidth: 8,
         duration: 1600,
         from: { color: '#aaa' },
-        to: { color: '#FFA500' },
+        to: { color: '#6666CC' },
 
         step: function (state, circle) {
             circle.path.setAttribute('stroke', state.color);
@@ -45,11 +45,11 @@ $(document).ready(function () {
 
     let circleC = new ProgressBar.Circle(containerC, {
 
-        color: '#FFA500',
+        color: '#6666CC',
         strokeWidth: 8,
         duration: 1800,
         from: { color: '#aaa' },
-        to: { color: '#FFA500' },
+        to: { color: '#6666CC' },
 
         step: function (state, circle) {
             circle.path.setAttribute('stroke', state.color);
@@ -65,11 +65,11 @@ $(document).ready(function () {
 
     let circleD = new ProgressBar.Circle(containerD, {
 
-        color: '#FFA500',
+        color: '#6666CC',
         strokeWidth: 8,
         duration: 2000,
         from: { color: '#aaa' },
-        to: { color: '#FFA500' },
+        to: { color: '#6666CC' },
 
         step: function (state, circle) {
             circle.path.setAttribute('stroke', state.color);
@@ -108,5 +108,40 @@ $(document).ready(function () {
         $('#data-area').parallax({ imageSrc: 'img/cidadeparallax.png' });
         $('#apply-area').parallax({ imageSrc: 'img/pattern.png' });
     }, 200);
+
+    // Filtro portfólio
+
+    $('.filter-btn').on('click', function () {
+        let type = $(this).attr('id');
+        let boxes = $('.project-box');
+
+        $('.filter-btn').removeClass('active');
+        $(this).addClass('active');
+
+        if (type == 'fe-btn') {
+            eachBoxes('fe', boxes);
+        } else if (type == 'be-btn') {
+            eachBoxes('be', boxes);
+        } else if (type == 'fs-btn') {
+            eachBoxes('fs', boxes);
+        } else {
+            eachBoxes('all', boxes);
+        }
+
+    });
+
+    function eachBoxes(type, boxes) {
+        if (type == 'all') {
+            $(boxes).fadeIn();
+        } else {
+            $(boxes).each(function () {
+                if (!$(this).hasClass(type)) {
+                    $(this).fadeOut('slow');
+                } else {
+                    $(this).fadeIn();
+                }
+            });
+        }
+    }
 
 });
