@@ -45,15 +45,15 @@
 
     <header>
         <div class="container" id="nav-container">
-            <nav class="navbar fixed-top navbar-expand-lg">
+            <nav class="navbar fixed-top navbar-expand-lg" id="navigation">
                 <a href="#" class="navbar-brand">
                     <img src="img/flash-logo-color.svg" id="logo" alt="Flash Studio">Flash Studio
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarToggler">
-                    <ul class="navbar-nav">
+                    <ul class="nav navbar-nav list-group nav-tabs" role="tablist">
                         <a href="#" class="nav-item nav-link" id="home-menu">Home</a>
                         <a href="#about-area" class="nav-item nav-link" id="about-menu">Sobre</a>
                         <a href="#service-area" class="nav-item nav-link" id="services-menu">Serviços</a>
@@ -66,7 +66,7 @@
         </div>
     </header>
 
-    <div class="container-fluid">
+    <div data-spy="scroll" data-target="#navigation" data-offset="0" class="container-fluid scrollspy-example" >
 
         <!-- Carrosel -->
         <div id="mainSlides" class="carousel slide" data-bs-ride="carousel">
@@ -137,11 +137,11 @@
                             consequatur, magni libero maxime repellat dicta veniam iure repudiandae sit ducimus facere
                             natus tenetur quod numquam, obcaecati beatae.</p>
                         <ul id="about-list">
-                            <li><i class="bi bi-patch-check"></i> Layout responsivo</li>
-                            <li><i class="bi bi-patch-check"></i> Aplicações integradas</li>
-                            <li><i class="bi bi-patch-check"></i> Altos padrões de qualidade</li>
-                            <li><i class="bi bi-patch-check"></i> Interfaces profissionais</li>
-                            <li><i class="bi bi-patch-check"></i> Profissinais qualificados</li>
+                            <li>Layout responsivo</li>
+                            <li>Aplicações integradas</li>
+                            <li>Altos padrões de qualidade</li>
+                            <li>Interfaces profissionais</li>
+                            <li>Profissinais qualificados</li>
                         </ul>
                     </div>
                 </div>
@@ -388,7 +388,7 @@
                 </div>
             </div>
         </div>
-        <div id="copy-area">
+        <div id="footer-area">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
