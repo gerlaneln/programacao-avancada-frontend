@@ -109,6 +109,7 @@ header,
 #about-list {
     list-style: none;
     line-height: 30px;
+    padding: 0;
 }
 
 #about-list li::before{
@@ -160,7 +161,7 @@ header,
 
 .card-body {
     text-align: center;
-    font-size: larger;
+    font-size: 18pt;
 }
 
 /* Recrutamento */
@@ -237,43 +238,6 @@ header,
     color: var(--logo-color);
 }
 
-/* Call To Action */
-
-#call-area {
-    background-color: #65DAF9;
-    text-transform: uppercase;
-}
-
-#call-area .container {
-    padding: 40px 100px;
-}
-
-#call-area .row {
-    display: block;
-    text-align: center;
-}
-
-#call-area p {
-    color: #FFF;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 0;
-    height: 60px;
-    line-height: 60px;
-    letter-spacing: 2px;
-    display: inline;
-}
-
-#call-area #call-btn {
-    background-color: #FFF;
-    color: #65DAF9;
-    font-weight: bold;
-    margin-left: 30px;
-    font-size: 20px;
-    width: auto;
-    letter-spacing: 2px;
-}
-
 /* Footer */
 
 #contact-area {
@@ -321,8 +285,21 @@ header,
 
 /* Footer */
 
+#social{
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.socialMedia{
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    height: 30px;
+    width: auto;
+}
+
 #footer-area {
-    background-color: var(--lighter-background);
+    background-image: linear-gradient(var(--lighter-color), var(--lighter-background))
 }
 
 #footer-area .container {
@@ -343,3 +320,73 @@ header,
     text-decoration: none;
     color: var(--logo-color);
 }
+
+@media (max-width: 769px) {
+
+    #nav-container{
+        margin-bottom: 50px;
+    }
+
+    #mainSlides p {
+        display: none;
+    }
+    
+    .slider-btn {
+        margin-top: 5px;
+        margin-bottom: 6px;
+    }
+
+    #mainSlides{
+        margin-top: auto;
+    }
+
+    .about-title{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #about-list{
+        font-size: 18pt;
+        padding: 0;
+    }
+
+    p{
+        font-size: 16pt;
+        margin: 10px;
+    }
+
+    #newsletter-form form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #email-input {
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 10px;
+        display: block;
+        position: relative;
+        margin-left: 10%;
+        margin-bottom: 20px;
+        width: 80%;
+        font-size: 16pt;
+    }
+    
+    #news-btn {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 10px;
+        margin-left: 0px;
+        display: block;
+        position: relative;
+        margin-left: 20%;
+        width: 60%;
+        font-size: 16pt;
+        height: 50px;
+    }
+}
+
+/* Common breakpoints are 320px — 480px for mobile devices, 481px — 768px for iPads & tablets, 769px — 1024px for small screens like laptop, 1025px — 1200px for large screens like Desktops, and 1201px and above for extra large screens like TV. */
