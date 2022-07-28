@@ -118,7 +118,7 @@ header,
 }
 
 #about-list li::before{
-    content: '\2023';
+    content: '\2015';
     margin: 5px;
 }
 
