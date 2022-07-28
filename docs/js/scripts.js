@@ -110,14 +110,18 @@ $(document).ready(function () {
     }, 200);
 
     // Filtro portfólio
-
+    // Função acionada quando um botão da classe filter-btn é clicado
     $('.filter-btn').on('click', function () {
+        // Guarda o id do botão clicado como "tipo"
         let type = $(this).attr('id');
+        // Contra as boxes mostradas no elemento de classe project-box
         let boxes = $('.project-box');
 
+        // Controla o estado ativo dos botões
         $('.filter-btn').removeClass('active');
         $(this).addClass('active');
 
+        // Se o tipo do botão clicado for igual ao tipo da box, ela é mostrada no elemento boxes com a função eachBoxes
         if (type == 'fe-btn') {
             eachBoxes('fe', boxes);
         } else if (type == 'be-btn') {
@@ -130,6 +134,7 @@ $(document).ready(function () {
 
     });
 
+    // Animação fadeIn fadeOut das boxes
     function eachBoxes(type, boxes) {
         if (type == 'all') {
             $(boxes).fadeIn();

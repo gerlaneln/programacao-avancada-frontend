@@ -3,7 +3,6 @@
     --lighter-color: #F6F8FF;
     --darkest-color: #1D1E2C;
     --darkest-accent: #131339;
-
     --lighter-background: #EFF2EF;
 }
 
@@ -33,6 +32,10 @@ li {
     position: relative;
 }
 
+#hamburguer-toggler{
+    margin: 20px;
+}
+
 /* Barra de Navegação */
 
 header,
@@ -40,6 +43,7 @@ header,
     background-color: var(--lighter-background);
     width: 100%;
     padding-left: 30px;
+    padding-right: 30px;
     box-shadow: 0 2px 2px -1px rgba(0,0,0,.2);
 }
 
@@ -50,6 +54,7 @@ header,
 
 #logo {
     height: 50px;
+    margin-right: 10px;
 }
 
 .navbar-brand {
@@ -113,7 +118,7 @@ header,
 }
 
 #about-list li::before{
-    content: '\2771';
+    content: '\2023';
     margin: 5px;
 }
 
@@ -187,9 +192,13 @@ header,
 
 /* Portifólio */
 
-#filter-btn-box {
+#filter-btn-box{
     text-align: center;
     margin-bottom: 40px;
+}
+
+#filter-btn-box button{
+    margin-bottom: 5px;
 }
 
 .project-box {
@@ -275,7 +284,6 @@ header,
 }
 
 #divider{
-    margin-top: 20px;
     margin-bottom: 20px;
     border-top: 1px solid var(--logo-color);
 }
@@ -330,6 +338,10 @@ header,
         text-align: center;
     }
 
+    #mainSlides{
+        margin-top: 90px;
+    }
+
     #mainSlides p {
         display: none;
     }
@@ -337,10 +349,6 @@ header,
     .slider-btn {
         margin-top: 5px;
         margin-bottom: 6px;
-    }
-
-    #mainSlides{
-        margin-top: auto;
     }
 
     .about-title{
@@ -366,6 +374,10 @@ header,
     .socialMedia{
         height: 30px;
         width: auto;
+    }
+
+    #divider{
+        margin-top: 20px;
     }
 
     #email-input {
