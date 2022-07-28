@@ -38,8 +38,8 @@ li {
 header,
 .navbar {
     background-color: var(--lighter-background);
+    width: 100%;
     padding-left: 30px;
-    padding-right: 30px;
     box-shadow: 0 2px 2px -1px rgba(0,0,0,.2);
 }
 
@@ -212,7 +212,6 @@ header,
     border-radius: 0;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 20px;
-    border: 1px solid var(--logo-color);
     display: inline;
     box-sizing: border-box;
     width: 40%;
@@ -222,7 +221,6 @@ header,
 #news-btn {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 10px;
-    border: 1px solid var(--logo-color);
     background-color: var(--logo-color);
     color: var(--lighter-color);
     text-transform: uppercase;
@@ -262,11 +260,24 @@ header,
 
 .contact-box p {
     font-size: 16px;
+    line-height: 12px;
 }
 
 .contact-tile {
     font-weight: bold;
     color: var(--logo-color);
+}
+
+.socialMedia{
+    margin-bottom: 0.6em;
+    height: 50px;
+    width: auto;
+}
+
+#divider{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid var(--logo-color);
 }
 
 #msg-box p {
@@ -285,21 +296,8 @@ header,
 
 /* Footer */
 
-#social{
-    padding: 30px;
-    width: 100%;
-    text-align: center;
-}
-
-.socialMedia{
-    margin-top: 0.6em;
-    margin-bottom: 0.6em;
-    height: 30px;
-    width: auto;
-}
-
 #footer-area {
-    background-image: linear-gradient(var(--lighter-color), var(--lighter-background))
+    background-color: var(--lighter-background);
 }
 
 #footer-area .container {
@@ -327,6 +325,11 @@ header,
         margin-bottom: 50px;
     }
 
+    .main-title {
+        font-size: 36px;
+        text-align: center;
+    }
+
     #mainSlides p {
         display: none;
     }
@@ -351,13 +354,18 @@ header,
     }
 
     p{
-        font-size: 16pt;
+        font-size: 14pt;
         margin: 10px;
     }
 
     #newsletter-form form{
         display: flex;
         flex-direction: column;
+    }
+
+    .socialMedia{
+        height: 30px;
+        width: auto;
     }
 
     #email-input {
@@ -371,7 +379,7 @@ header,
         margin-left: 10%;
         margin-bottom: 20px;
         width: 80%;
-        font-size: 16pt;
+        font-size: 14pt;
     }
     
     #news-btn {
@@ -384,8 +392,8 @@ header,
         position: relative;
         margin-left: 20%;
         width: 60%;
-        font-size: 16pt;
-        height: 50px;
+        font-size: 14pt;
+        height: 40px;
     }
 }
 
